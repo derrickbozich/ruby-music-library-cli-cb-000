@@ -61,13 +61,13 @@ class MusicLibraryController
     genres.each.with_index(1) {|genre, i| puts "#{i}. #{genre.name}"}
   end
 
-  def list_songs_by_artist
-    input = gets.chomp
-    artist = Artist.all.detect(input)
-    songs = artist.songs.sort {|a,b| a.name <=> b.name}
-    songs.each.with_index(1) {|song, i| puts "#{i}. #{song.name}"}
-    binding.pry
-  end
+  # def list_songs_by_artist
+  #   input = gets.chomp
+  #   artist = Artist.all.detect(input)
+  #   songs = artist.songs.sort {|a,b| a.name <=> b.name}
+  #   songs.each.with_index(1) {|song, i| puts "#{i}. #{song.name}"}
+  #   binding.pry
+  # end
 
 
 
