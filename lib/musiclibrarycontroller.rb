@@ -61,6 +61,7 @@ class MusicLibraryController
     genres.each.with_index(1) {|genre, i| puts "#{i}. #{genre.name}"}
   end
 
+  binding.pry
   # def list_songs_by_artist
   #   input = gets.chomp
   #   artist = Artist.all.detect(input)
